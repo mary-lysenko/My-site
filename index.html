@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My website</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./js/menu.js"></script>
+  </head>
+  <body>
+    <header class="header-page">
+      <div class="header-container container">
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Про себе</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Навички</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Проєкти</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="contacts">
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <a class="contacts-link" href="mailto:lislysenko@gmail.com"
+                >lislysenko@gmail.com</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a class="contacts-link" href="tel:+380507012017"
+                >+38 (050) 701-20-17</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu" data-menu>
+        <div>
+          <button type="button" class="mob-close close-btn" data-menu-close>
+            <svg class="mob-close-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="mob-nav-list">
+              <li class="mob-nav-item">
+                <a class="mob-nav-link" href="#about">about me</a>
+              </li>
+              <li class="mob-nav-item">
+                <a class="mob-nav-link" href="#skills">skills</a>
+              </li>
+              <li class="mob-nav-item">
+                <a class="mob-nav-link" href="#projects">projects</a>
+              </li>
+              <li class="mob-nav-item">
+                <a class="mob-nav-link" href="#contacts">contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mob-menu-icons">
+          <ul class="mob-social-icons-list">
+            <li class="mob-social-icons-item">
+              <a
+                class="social-icons-link"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <svg class="social-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-icons-item">
+              <a
+                class="social-icons-link"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <svg class="social-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-icons-item">
+              <a
+                class="social-icons-link"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <svg class="social-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero-container container">
+        <h1 class="hero-title">
+          Turning designs into reality — pixel by pixel
+        </h1>
+        <p class="hero-subtitle">
+          I build responsive websites that are both beautiful and functional.
+          Currently focused on clean HTML/CSS layouts and learning JavaScript
+        </p>
+        <a href="#projects" class="btn-main">See my work</a>
+      </div>
+    </section>
+    <section id="about" class="about-page">
+      <div class="about-container container">
+        <h2 class="about-title">Hi! I'm Maria</h2>
+        <p class="about-text">
+          I'm a junior HTML developer passionate about clean code, cozy design &
+          creating sites that feel like home. In between coding, I volunteer for
+          an animal shelter 🐾
+        </p>
+        <div class="shelter-box">
+          <img
+            src="./images/photo_2025-07-13_22-32-36-min.jpg"
+            alt="Shelter dog"
+            class="shelter-img"
+          />
+          <p class="shelter-text">
+            This is one of our tail-wagging residents! Wanna send some love?
+          </p>
+          <a
+            href="https://send.monobank.ua/jar/34wpSZPf9a"
+            target="_blank"
+            class="donate-link"
+            >Support our shelter</a
+          >
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skills-page">
+      <div class="skills-container container">
+        <h2 class="section-title">Skills</h2>
+        <ul class="skills-list">
+          <li class="skills-item">
+            <img
+              class="skills-img"
+              src="./images/html.png"
+              width="264"
+              height="260"
+              alt=""
+            />
+            <h3 class="skills-name">HTML5</h3>
+            <p class="skills-text">Semantic, accessible, clean structure.</p>
+          </li>
+          <li class="skills-item">
+            <img
+              class="skills-img"
+              src="./images/css.png"
+              width="264"
+              height="260"
+              alt=""
+            />
+            <h3 class="skills-name">CSS3</h3>
+            <p class="skills-text">Responsive layouts, Flexbox, animations.</p>
+          </li>
+          <li class="skills-item">
+            <img
+              class="skills-img"
+              src="./images/git.png"
+              width="264"
+              height="260"
+              alt=""
+            />
+            <h3 class="skills-name">Git & GitHub</h3>
+            <p class="skills-text">Version control, team collaboration.</p>
+          </li>
+          <li class="skills-item">
+            <img
+              class="skills-img"
+              src="./images/resp.png"
+              width="264"
+              height="260"
+              alt=""
+            />
+            <h3 class="skills-name">Responsive Design</h3>
+            <p class="skills-text">
+              Mobile-first, adaptive UI, testing on devices.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
